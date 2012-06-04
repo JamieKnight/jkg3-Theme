@@ -1,0 +1,189 @@
+/*-  CSS RESET
+----------------------------------------------------------------------*/
+
+/* 
+  html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+  v1.4 2009-07-27 | Authors: Eric Meyer & Richard Clark
+  html5doctor.com/html-5-reset-stylesheet/
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+  list-style:none;
+}                  
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section { 
+    display:block;
+}
+
+
+/*-  BASE STYLES
+----------------------------------------------------------------------*/
+
+html {
+	background: #eee;
+/* 	background: #eee url(/assets/station_cc_ehrot.jpg) no-repeat center center fixed; */
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+a {
+
+	color: #4EA8D7;
+	font-weight: bold;
+	text-decoration: none;
+
+}
+
+a:hover, a:focus, a:active {
+	text-decoration: underline;
+	background: #FFF7B6;
+	color: #666;
+}
+
+body {
+
+	color: #666;
+	font: normal 16px/22px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	max-width: 700px;
+	margin: 75px auto;
+	
+}
+
+
+
+html, body {
+	-webkit-font-smoothing: antialiased;
+}
+
+aside, article, #archive {
+	background: #FFF;
+	border: 1px solid #E5E5E5;
+	clear: both;
+	padding-bottom: 18px;
+}
+
+#archive h2 {
+
+	background: #F9F9F9;
+	border-top: 1px solid #EFEFEF;
+	padding-top: 22px;
+	margin-top:0;
+}
+
+article { 
+	margin-top: 40px;
+}
+
+h1, h2, h3, h4, p, ul, pre { 
+	margin-bottom: 22px;
+	padding:0 40px;
+}
+
+article ul li { list-style-type: circle; list-style-position: inside; }
+
+h1, h2, h3, h4 { 
+	margin-top: 22px;
+}
+
+h1, h2 {
+
+	border-bottom: 1px solid #E5E5E5;
+	padding-bottom: 22px;
+
+}
+
+aside { 
+	padding: 40px;
+}
+
+aside p {
+	padding: 0;
+	margin: 0;
+}
+
+nav ul li {
+	display: inline;
+	padding: 0 5px;
+/* 	border-left: 1px solid rgba(255,255,255,0.8); */
+	border-left: 1px solid rgba(0,0,0,0.3);
+	
+	
+}
+
+nav ul li:first-of-type {
+
+	border: none;
+
+}
+
+nav ul { 
+	display: block;
+	float: right;
+	overflow: auto;
+	margin-bottom: 25px;
+	padding: 0;
+}
+
+nav ul li a {
+	color: #999;
+	text-decoration: none;
+	font-weight: normal;
+	
+/* 	color: #000; */
+}
+
+nav ul li a:hover, nav ul li a:focus {
+	color: #333;
+	background: none;
+}
+
+aside img {
+
+	float: left;
+	margin-right: 40px;
+	margin-top: -90px;
+	padding: 5px;
+	background: rgba(255,255,255, 0.9);
+	border: 1px solid rgba(255,255,255, 0.6);
+	margin-bottom: 40px;
+}
+
+.post-image {
+
+	border-bottom: 1px solid #EEEEEE;
+	max-width: 698px;
+	height: auto;
+	display: block;
+
+}
+
+.meta { border-top: 1px solid #E5E5E5; padding-top: 40px; margin-top: 22px;}
+
+@media screen and (max-width: 700px) {
+
+	body { width: 80%; }
+	aside img { float: none; margin:0 auto; display: block; }
+	.post-image { max-width: 100%; 	height: auto;}
+	article img	{ max-width: 100%; 	height: auto;}
+
+}
