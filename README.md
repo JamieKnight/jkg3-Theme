@@ -10,6 +10,12 @@ To use this theme upload all of the file to the root of your file server. Then l
 
 	<txp:php> include("default.php"); </txp:php>
 	
+Once you have setup the page, you then need to setup the theme. Copy the contents of:
+
+	/default_form.php
+	
+Into the default article form in textpattern.
+	
 
 Contributing
 ------------
