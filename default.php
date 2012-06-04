@@ -44,7 +44,7 @@
 	<a href="/">
 		<img src="/jamie_and_lion.jpg" alt="Photo of Jamie &amp; Lion" />
 	</a>
-	<p>The personal site and blog of slightly autistic <a href="http://bbc.co.uk/radio">developer (on BBC Radio)</a> &amp; <a href="http://pluslion.com/services">speaker</a> Jamie Knight and his trusty feline companion Lion. <!-- <a href="/about">Find out more</a>  --></p>
+	<p>The personal site of <strong>Jamie Knight</strong>, a slightly autistic <strong>web developer</strong>, <strong>speaker</strong> and <strong>mountain biker</strong> who is never seen far from his plush sidekick <em>Lion</em>. </p>
 </aside>
 
 
