@@ -44,6 +44,9 @@ html {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	
+	/* background: #192B40 url(http://subtlepatterns.com/patterns/dark_wall.png) center center; */
+	
 }
 
 a {
