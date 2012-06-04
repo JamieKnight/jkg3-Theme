@@ -39,11 +39,15 @@ footer, header, hgroup, menu, nav, section {
 
 html {
 	background: #eee;
-/* 	background: #eee url(/assets/station_cc_ehrot.jpg) no-repeat center center fixed; */
+ 	background: #eee url(http://subtlepatterns.com/patterns/wood_pattern.png) center center;
+	
+/*
+	http://dl.dropbox.com/u/31259645/wall.png
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+*/
 }
 
 a {
@@ -78,7 +82,7 @@ html, body {
 
 aside, article, #archive {
 	background: #FFF;
-	border: 1px solid #E5E5E5;
+	/* border: 1px solid #E5E5E5; */
 	clear: both;
 	padding-bottom: 18px;
 }
@@ -103,7 +107,7 @@ h1, h2, h3, h4, p, ul, pre {
 article ul li { list-style-type: circle; list-style-position: inside; }
 
 h1, h2, h3, h4 { 
-	margin-top: 22px;
+	padding-top: 22px;
 }
 
 h1, h2 {
@@ -143,7 +147,7 @@ nav ul {
 }
 
 nav ul li a {
-	color: #999;
+	color: #000;
 	text-decoration: none;
 	font-weight: normal;
 	
@@ -151,7 +155,7 @@ nav ul li a {
 }
 
 nav ul li a:hover, nav ul li a:focus {
-	color: #333;
+	color: #666;
 	background: none;
 }
 
