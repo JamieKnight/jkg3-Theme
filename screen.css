@@ -111,7 +111,7 @@ h1, h2, h3, h4, p, ul, pre {
 article ul li { list-style-type: circle; list-style-position: inside; }
 
 h1, h2, h3, h4 { 
-	margin-top: 22px;
+	padding-top: 22px;
 }
 
 h1, h2 {
