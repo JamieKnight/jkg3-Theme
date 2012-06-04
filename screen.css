@@ -66,6 +66,7 @@ body {
 	font: normal 16px/22px 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	max-width: 700px;
 	margin: 75px auto;
+	padding: 0 20px;
 	
 }
 
@@ -124,10 +125,7 @@ aside p {
 nav ul li {
 	display: inline;
 	padding: 0 5px;
-/* 	border-left: 1px solid rgba(255,255,255,0.8); */
 	border-left: 1px solid rgba(0,0,0,0.3);
-	
-	
 }
 
 nav ul li:first-of-type {
@@ -171,9 +169,9 @@ aside img {
 .post-image {
 
 	border-bottom: 1px solid #EEEEEE;
-	max-width: 698px;
 	height: auto;
 	display: block;
+	max-width: 100%;
 
 }
 
@@ -181,9 +179,9 @@ aside img {
 
 @media screen and (max-width: 700px) {
 
-	body { width: 80%; }
 	aside img { float: none; margin:0 auto; display: block; }
-	.post-image { max-width: 100%; 	height: auto;}
-	article img	{ max-width: 100%; 	height: auto;}
+	body      { margin: 40px auto;}
+	pre 	  {  overflow: auto;}
+	
 
 }
