@@ -38,16 +38,12 @@ footer, header, hgroup, menu, nav, section {
 ----------------------------------------------------------------------*/
 
 html {
-	background: #eee;
- 	background: #eee url(http://subtlepatterns.com/patterns/wood_pattern.png) center center;
-	
-/*
-	http://dl.dropbox.com/u/31259645/wall.png
+
+ 	background: #192B40 url(http://dl.dropbox.com/u/31259645/wall.png) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-*/
 }
 
 a {
@@ -82,9 +78,17 @@ html, body {
 
 aside, article, #archive {
 	background: #FFF;
-	/* border: 1px solid #E5E5E5; */
+	border: none;
 	clear: both;
 	padding-bottom: 18px;
+}
+
+aside {
+
+	background: rgba(0,0,0,0.1);
+	color: #FFF;
+	border:1px solid rgba(0,0,0,0.2);
+	font-size: 1.2em;
 }
 
 #archive h2 {
@@ -107,7 +111,7 @@ h1, h2, h3, h4, p, ul, pre {
 article ul li { list-style-type: circle; list-style-position: inside; }
 
 h1, h2, h3, h4 { 
-	padding-top: 22px;
+	margin-top: 22px;
 }
 
 h1, h2 {
@@ -129,7 +133,7 @@ aside p {
 nav ul li {
 	display: inline;
 	padding: 0 5px;
-	border-left: 1px solid rgba(0,0,0,0.3);
+	border-left: 1px solid rgba(255,255,255,0.3);
 }
 
 nav ul li:first-of-type {
@@ -147,7 +151,7 @@ nav ul {
 }
 
 nav ul li a {
-	color: #000;
+	color: #FFF;
 	text-decoration: none;
 	font-weight: normal;
 	
@@ -155,8 +159,9 @@ nav ul li a {
 }
 
 nav ul li a:hover, nav ul li a:focus {
-	color: #666;
+	color: #FFF;
 	background: none;
+	text-decoration: underline;
 }
 
 aside img {
