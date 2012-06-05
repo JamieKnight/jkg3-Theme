@@ -39,7 +39,7 @@ footer, header, hgroup, menu, nav, section {
 
 html {
 
- 	background: #192B40 url(http://dl.dropbox.com/u/31259645/wall.png) no-repeat center center fixed;
+ 	background: #1F181B url(/assets/wall.png) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -88,9 +88,9 @@ aside, article, #archive {
 
 aside {
 
-	background: rgba(0,0,0,0.1);
+	background: rgba(0,0,0,0.2);
 	color: #FFF;
-	border:1px solid rgba(0,0,0,0.2);
+	border:1px solid rgba(0,0,0,0.1);
 	font-size: 1.2em;
 }
 
@@ -191,9 +191,15 @@ aside img {
 
 @media screen and (max-width: 700px) {
 
-	aside img { float: none; margin:0 auto; display: block; }
+	aside img { float: none; margin:0 auto; display: block; margin-bottom: 20px;}
 	body      { margin: 40px auto;}
 	pre 	  {  overflow: auto;}
 	
+
+}
+
+@media screen and (max-width: 1024px) {
+
+	html { background-size:auto; background-attachment: fixed;  background-position: center top; }
 
 }

@@ -3,7 +3,7 @@
 <head>
 	<title>Jamie Knight &amp; Lion</title>
 	<link href="/screen.css" media="screen" rel="stylesheet" type="text/css" />
-	<meta name="viewport" content="width=device-width" />
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0" />
 	<script type="text/javascript">
 	  //Please edit this tracking code if you use this theme.
 	  var _gaq = _gaq || [];
