@@ -79,6 +79,8 @@ aside, article, #archive {
 	border: 1px solid #E5E5E5;
 	clear: both;
 	padding-bottom: 18px;
+	border-radius: 5px;
+	border-bottom-width: 2px;
 }
 
 #archive h2 {
@@ -104,6 +106,7 @@ h1, h2, h3, h4 {
 	margin-top: 22px;
 }
 
+h1 { font-size: 21px; }
 h1 a { color: #000; }
 h1, h2 {
 
@@ -169,10 +172,23 @@ aside img {
 	height: auto;
 	display: block;
 	max-width: 100%;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
 
+.meta { 
+	border-top: 1px solid #E5E5E5; 
+	padding-top: 40px; 
+	margin-top: 22px; 
+	opacity: 0.6;    
+	-webkit-transition:opacity 0.5s ease-in;
+    -moz-transition:opacity 0.5s ease-in;
+    -o-transition:opacity 0.5s ease-in;
+    transition:opacity 0.5s ease-in;
 }
 
-.meta { border-top: 1px solid #E5E5E5; padding-top: 40px; margin-top: 22px;}
+.meta:hover { 
+	opacity: 1; 
+}
 
 @media screen and (max-width: 700px) {
 
