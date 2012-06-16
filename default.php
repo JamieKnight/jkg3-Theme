@@ -3,7 +3,6 @@
 <head>
 	<title>Jamie Knight &amp; Lion</title>
 	<link href="/screen.css" media="screen" rel="stylesheet" type="text/css" />
-	<txp:feed_link format="link" flavor="rss" />
 	<meta name="viewport" content="width=device-width" />
 	<script type="text/javascript">
 	  //Please edit this tracking code if you use this theme.
@@ -28,7 +27,6 @@
 <!-- 	<li><a href="/about">About</a></li> -->
 	<li><a href="/archive">Archive</a></li>
 	<li><a href="http://pluslion.com">Work Site (+Lion)</a></li>
-	<txp:feed_link flavor="rss" label="RSS Feed" wraptag="li" />
 	</ul>
 </nav>
 

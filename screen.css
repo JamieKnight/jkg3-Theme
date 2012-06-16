@@ -53,7 +53,7 @@ a {
 
 }
 
-a:hover, a:focus, a:active, h1 a:hover, h1 a:focus, h1 a:active {
+a:hover, a:focus, a:active {
 	text-decoration: underline;
 	color: #666;
 }
