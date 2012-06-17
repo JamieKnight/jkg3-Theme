@@ -227,7 +227,8 @@ aside img {
 
 @media screen and (max-width: 700px) {
 
-	aside img { float: none; margin:0 auto; display: block; }
+	aside img { float: none; margin:0 auto; display: block;  }
+	article img { max-width: 100%; height: auto; }
 	body      { margin: 40px auto;}
 	pre 	  {  overflow: auto;}
 	
