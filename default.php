@@ -41,11 +41,19 @@
 
 
 <txp:if_section name=", Journal"> 
-	<txp:if_individual_article>
-		<txp:article />
+	
+	<txp:if_category>
+		<div id="archive">
+		<txp:article_custom category='<txp:category_list parent=''<txp:category />'' break=""><txp:category /><txp:if_last_category><txp:else />,</txp:if_last_category></txp:category_list>' form="monthly_article" />
+		</div>
 	<txp:else />
-		<txp:article_custom section="journal" limit="3" />
-	</txp:if_individual_article>
+		<txp:if_individual_article>
+			<txp:article />
+		<txp:else />
+			<txp:article_custom section="journal" limit="3" />
+		</txp:if_individual_article>
+		
+	</txp:if_category>
 </txp:if_section>
 
 
