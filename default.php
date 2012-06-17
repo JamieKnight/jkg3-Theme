@@ -28,7 +28,6 @@
 <!-- 	<li><a href="/about">About</a></li> -->
 	<li><a href="/archive">Archive</a></li>
 	<li><a href="http://pluslion.com">Work Site (+Lion)</a></li>
-	<txp:feed_link flavor="rss" label="RSS Feed" wraptag="li" />
 	<txp:feed_link flavor="rss" wraptag="li"><img src="/assets/rss.png" alr="RSS Feed" /> </txp:feed_link>
 	</ul>
 </nav>
