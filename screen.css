@@ -192,16 +192,17 @@ aside img {
 	padding-top: 40px; 
 	margin-top: 22px; 
 	opacity: 0.6;    
-	-webkit-transition:opacity 0.5s ease-in;
-    -moz-transition:opacity 0.5s ease-in;
-    -o-transition:opacity 0.5s ease-in;
-    transition:opacity 0.5s ease-in;
+	-webkit-transition:opacity 0.3s ease-in;
+    -moz-transition:opacity 0.3s ease-in;
+    -o-transition:opacity 0.3s ease-in;
+    transition:opacity 0.3s ease-in;
 }
 
 .meta:hover { 
 	opacity: 1; 
 }
 
+.permlink { float: right; display: block; background: url(/assets/permalink.png) center right no-repeat; padding-right: 30px;}
 @media screen and (max-width: 700px) {
 
 	aside img { float: none; margin:0 auto; display: block; }
