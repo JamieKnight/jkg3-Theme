@@ -61,7 +61,7 @@ a:hover, a:focus, a:active, h1 a:hover, h1 a:focus, h1 a:active {
 body {
 
 	color: #333;
-	font: normal 16px/26px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+ 	font: normal 16px/26px 'Helvetica Neue', Helvetica, Arial, sans-serif; 
 	max-width: 700px;
 	margin: 75px auto;
 	padding: 0 20px;
@@ -102,6 +102,12 @@ article div {
 
 article { 
 	margin-top: 40px;
+}
+
+
+article p, aside p {
+	
+	font-family: "Trebuchet MS";
 }
 
 h1, h2, h3, h4, p, ul, pre { 
@@ -203,6 +209,7 @@ aside img {
 }
 
 .permlink { float: right; display: block; background: url(/assets/permalink.png) center right no-repeat; padding-right: 30px;}
+
 @media screen and (max-width: 700px) {
 
 	aside img { float: none; margin:0 auto; display: block; }
