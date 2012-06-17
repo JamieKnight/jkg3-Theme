@@ -27,7 +27,7 @@
 	<li><a href="/">Home</a></li>
 <!-- 	<li><a href="/about">About</a></li> -->
 	<li><a href="/archive">Archive</a></li>
-	<li><a href="http://pluslion.com">Work Site (+Lion)</a></li>
+	<li><a href="http://pluslion.com">+Lion </a></li>
 	<txp:feed_link flavor="rss" wraptag="li"><img src="/assets/rss.png" alr="RSS Feed" /> </txp:feed_link>
 	</ul>
 </nav>
@@ -36,7 +36,7 @@
 	<a href="/">
 		<img src="/jamie_and_lion.jpg" alt="Photo of Jamie &amp; Lion" />
 	</a>
-	<p>The personal site of <strong>Jamie Knight</strong>, a slightly autistic <strong>web developer</strong>, <strong>speaker</strong> and <strong>mountain biker</strong> who is never seen far from his plush sidekick <em>Lion</em>. </p>
+	<p>The personal site of <strong>Jamie Knight</strong>, a slightly autistic (<abbr title="British Boradcasting Corpoeration">BBC</abbr>)  <strong>web developer</strong>, <strong>speaker</strong> and <strong>mountain biker</strong> who is never seen far from his plush sidekick <em>Lion</em>.</p>
 </aside>
 
 
