@@ -38,7 +38,7 @@ footer, header, hgroup, menu, nav, section {
 ----------------------------------------------------------------------*/
 
 html {
-	background: #eee;
+	background: #F2F2F2;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -61,7 +61,7 @@ a:hover, a:focus, a:active, h1 a:hover, h1 a:focus, h1 a:active {
 body {
 
 	color: #333;
-	font: normal 16px/22px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font: normal 16px/26px 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	max-width: 700px;
 	margin: 75px auto;
 	padding: 0 20px;
@@ -82,6 +82,15 @@ aside, article, #archive {
 	border-radius: 5px;
 	border-bottom-width: 2px;
 }
+
+/*
+article div {
+
+	background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(whiteSmoke));
+	margin: 3px;
+
+}
+*/
 
 #archive h2 {
 
