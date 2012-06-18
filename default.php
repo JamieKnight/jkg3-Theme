@@ -24,9 +24,14 @@
 
 <nav>
 	<ul>
+<!-- 	<li>Pages</li> -->
 	<li><a href="/">Home</a></li>
 <!-- 	<li><a href="/about">About</a></li> -->
 	<li><a href="/archive">Archive</a></li>
+<!--
+	
+	<li class="other">Other</li>
+-->
 	<li><a href="http://pluslion.com">+Lion </a></li>
 	<txp:feed_link flavor="rss" wraptag="li"><img src="/assets/rss.png" alr="RSS Feed" /> </txp:feed_link>
 	</ul>

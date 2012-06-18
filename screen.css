@@ -39,24 +39,62 @@ footer, header, hgroup, menu, nav, section {
 
 html {
 	background: #F2F2F2;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+}
+
+body {
+
+	color: #333;
+ 	font: normal 16px/26px 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+	max-width: 700px;
+	margin: 75px auto;
+	padding: 0 20px;
+	-webkit-font-smoothing: antialiased;
 }
 
 a {
-
 	color: #4793bb;
 	font-weight: bold;
-	
 	text-decoration: underline;
-
 }
 
 a:hover, a:focus, a:active  {
 	text-decoration: none;
 	color: #147eb7;
+}
+
+.left { 
+	float: left;
+	padding-right: 1em;
+}
+.right { 
+	float: right; 
+	padding-left: 1em; 
+}
+
+/*-  HEADINGS + HEADING LINKS
+----------------------------------------------------------------------*/
+
+h1, h2, h3, h4, p, ul, pre { 
+	margin-bottom: 22px;
+	padding:0 40px;
+}
+
+h1, h2, h3, h4 { 
+	margin-top: 22px;
+	font-weight: normal;
+}
+
+h1 { 
+	font-size: 26px; 
+}
+
+h1, h2 {
+	border-bottom: 1px solid #E5E5E5;
+	padding-bottom: 22px;
+}
+
+h3 { 
+	font-size: 21px;
 }
 
 h1 a {
@@ -71,21 +109,17 @@ h1 a:hover, h1 a:focus, h1 a:active {
 	color: #4793bb;
 }
 
-body {
+#archive h2 {
 
-	color: #333;
- 	font: normal 16px/26px 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-	max-width: 700px;
-	margin: 75px auto;
-	padding: 0 20px;
-	
+	background: #F9F9F9;
+	border-top: 1px solid #EFEFEF;
+	padding-top: 22px;
+	margin-top:0;
 }
 
+/*-  STRUCTURE
+----------------------------------------------------------------------*/
 
-
-html, body {
-	-webkit-font-smoothing: antialiased;
-}
 
 aside, article, #archive {
 	background: #FFF;
@@ -96,61 +130,34 @@ aside, article, #archive {
 	border-bottom-width: 2px;
 }
 
-/*
-article div {
-
-	background: -webkit-gradient(linear, left top, left bottom, from(#FBFBFB), to(whiteSmoke));
-	margin: 3px;
-
+aside { 
+	padding: 40px;
 }
-*/
 
-#archive h2 {
+aside img {
+	float: left;
+	margin-right: 40px;
+	margin-top: -90px;
+	margin-bottom: 40px;
+}
 
-	background: #F9F9F9;
-	border-top: 1px solid #EFEFEF;
-	padding-top: 22px;
-	margin-top:0;
+aside p {
+	padding: 0;
+	margin: 0;
 }
 
 article { 
 	margin-top: 40px;
 }
 
-
-article p, aside p {
-	
+article p, aside p {	
 	font-family: "Trebuchet MS";
 }
 
-h1, h2, h3, h4, p, ul, pre { 
+article ul li { 
+	list-style-type: circle; 
+	list-style-position: inside;
 	margin-bottom: 22px;
-	padding:0 40px;
-}
-
-article ul li { list-style-type: circle; list-style-position: inside; }
-
-h1, h2, h3, h4 { 
-	margin-top: 22px;
-}
-
-h1 { font-size: 26px; }
-h1 a { color: #000; }
-
-h1, h2 {
-
-	border-bottom: 1px solid #E5E5E5;
-	padding-bottom: 22px;
-
-}
-
-aside { 
-	padding: 40px;
-}
-
-aside p {
-	padding: 0;
-	margin: 0;
 }
 
 nav ul li {
@@ -159,12 +166,17 @@ nav ul li {
 	border-left: 1px solid rgba(0,0,0,0.3);
 }
 
-.other { border: none; padding-left: 40px; }
+
+/*-  NON STRUCTURAL ELEMENTS
+----------------------------------------------------------------------*/
+
+.other { 
+	border: none; 
+	padding-left: 40px; 
+}
 
 nav ul li:first-of-type {
-
 	border: none;
-
 }
 
 nav ul { 
@@ -176,36 +188,21 @@ nav ul {
 }
 
 nav ul li a {
-	color: #666;
-	text-decoration: none;
+	color: #000;
 	font-weight: normal;
-	
-/* 	color: #000; */
 }
 
 nav ul li a:hover, nav ul li a:focus {
 	color: #333;
-	background: none;
-}
-
-aside img {
-
-	float: left;
-	margin-right: 40px;
-	margin-top: -90px;
-	margin-bottom: 40px;
-
 }
 
 .post-image {
-
 	border-bottom: 1px solid #EEEEEE;
 	height: auto;
 	display: block;
 	max-width: 100%;
 	border-top-right-radius: 5px;
 	border-top-left-radius: 5px;
-
 }
 
 .meta { 
@@ -223,14 +220,16 @@ aside img {
 	opacity: 1; 
 }
 
-.permlink { float: right; display: block; background: url(/assets/permalink.png) center right no-repeat; padding-right: 30px;}
+.permlink { 
+	float: right; 
+	display: block; 
+	background: url(/assets/permalink.png) center right no-repeat; 
+	padding-right: 30px;
+}
 
 @media screen and (max-width: 700px) {
-
 	aside img { float: none; margin:0 auto 10px auto; display: block;  }
 	article img { max-width: 100%; height: auto; }
 	body      { margin: 40px auto;}
 	pre 	  {  overflow: auto;}
-	
-
 }
