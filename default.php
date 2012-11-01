@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Jamie Knight &amp; Lion</title>
+	<title><txp:page_title /></title>
 	<link href="/screen.css" media="screen" rel="stylesheet" type="text/css" />
 	<txp:feed_link format="link" flavor="rss" />
 	<meta name="viewport" content="width=device-width" />
