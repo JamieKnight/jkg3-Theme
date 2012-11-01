@@ -121,7 +121,7 @@ h1 a:hover, h1 a:focus, h1 a:active {
 ----------------------------------------------------------------------*/
 
 
-aside, article, #archive {
+aside, article, #archive, form, #txpCommentInputForm, .comments li {
 	background: #FFF;
 	border: 1px solid #E5E5E5;
 	clear: both;
@@ -226,6 +226,17 @@ nav ul li a:hover, nav ul li a:focus {
 	background: url(/assets/permalink.png) center right no-repeat; 
 	padding-right: 30px;
 }
+
+fieldset { border: none;}
+fieldset h3 {  padding-bottom: 5px; font-size: 16px; }
+fieldset label { width: 180px; display: block; float: left; font-size: 14px; }
+fieldset input[type='text'] { border: #E5E5E5 solid 1px; background: #FEFEFE; padding: 6px; width:400px;}
+fieldset input:focus { background: #FFF; }
+fieldset textarea { border: #E5E5E5 solid 1px; background: #FEFEFE; padding: 6px;  width:400px; height: 140px;}
+fieldset textarea:focus { background: #FFF; }
+
+.comments li { width: 100%; margin-bottom: 40px; opacity: 0.6;}
+.comments li:hover { opacity: 1;}
 
 @media screen and (max-width: 700px) {
 	aside img { float: none; margin:0 auto 10px auto; display: block;  }
