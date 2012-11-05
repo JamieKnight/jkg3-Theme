@@ -38,7 +38,8 @@ footer, header, hgroup, menu, nav, section {
 ----------------------------------------------------------------------*/
 
 html {
-	background: #F2F2F2;
+/* 	background: #F2F2F2; */
+	background: #F0EEEC;
 }
 
 body {
@@ -85,7 +86,9 @@ h1, h2, h3, h4 {
 }
 
 h1 { 
-	font-size: 26px; 
+	line-height: 1.4em; 
+	font: #666;
+	font-size: 24px;
 }
 
 h1, h2 {
@@ -132,18 +135,25 @@ aside, article, #archive, form, #txpCommentInputForm, .comments li {
 
 aside { 
 	padding: 40px;
+	clear: both; 
+	overflow: auto;
 }
 
 aside img {
 	float: left;
 	margin-right: 40px;
+	border: 1px solid #CCC;
+	
+	/*
 	margin-top: -90px;
 	margin-bottom: 40px;
+	*/
 }
 
 aside p {
 	padding: 0;
 	margin: 0;
+	margin-top: 20px;
 }
 
 article { 
@@ -153,6 +163,7 @@ article {
 article p, aside p {	
 	font-family: "Trebuchet MS";
 	font-family: 'Open Sans', sans-serif;
+	 -webkit-text-size-adjust: none;
 }
 
 article ul li { 
@@ -163,8 +174,8 @@ article ul li {
 
 nav ul li {
 	display: inline;
-	padding: 0 5px;
-	border-left: 1px solid rgba(0,0,0,0.3);
+	padding: 0 15px;
+/* 	border-left: 1px solid rgba(0,0,0,0.3); */
 }
 
 
@@ -189,12 +200,13 @@ nav ul {
 }
 
 nav ul li a {
-	color: #000;
+	color: #888;
 	font-weight: normal;
+	text-decoration: none;
 }
 
 nav ul li a:hover, nav ul li a:focus {
-	color: #333;
+	color: #000;
 }
 
 .post-image {
@@ -240,8 +252,14 @@ fieldset textarea:focus { background: #FFF; }
 .comments li:hover { opacity: 1;}
 
 @media screen and (max-width: 700px) {
-	aside img { float: none; margin:0 auto 10px auto; display: block;  }
+	
 	article img { max-width: 100%; height: auto; }
-	body      { margin: 40px auto;}
+	body      { margin: 20px auto; font-size: 14px; line-height: 1.4em;}
 	pre 	  {  overflow: auto;}
+	h1, h2, h3, h4, p, ul, pre { padding: 0 20px; }
+	aside { padding: 20px; }
+}
+
+@media screen and (max-width: 480px) {
+	aside img { float: none; margin:0 auto 10px auto; display: block;  }
 }
