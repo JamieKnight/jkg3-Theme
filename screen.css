@@ -38,13 +38,15 @@ footer, header, hgroup, menu, nav, section {
 ----------------------------------------------------------------------*/
 
 html {
-	background: #F2F2F2;
+/* 	background: #F2F2F2; */
+	background: #E4E1DD;
 }
 
 body {
 
-	color: #333;
- 	font: normal 16px/26px 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+	color: #4C4C4C;
+ 	font: normal 16px/26px 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+ 	/*font: normal 16px/26px 'Helvetica Neue', Helvetica, Arial, sans-serif; */
 	max-width: 700px;
 	margin: 75px auto;
 	padding: 0 20px;
@@ -71,6 +73,8 @@ a:hover, a:focus, a:active  {
 	padding-left: 1em; 
 }
 
+
+
 /*-  HEADINGS + HEADING LINKS
 ----------------------------------------------------------------------*/
 
@@ -81,11 +85,11 @@ h1, h2, h3, h4, p, ul, pre {
 
 h1, h2, h3, h4 { 
 	margin-top: 22px;
-	font-weight: normal;
 }
 
 h1 { 
-	font-size: 26px; 
+	line-height: 1.4em; 
+	font-size: 24px;
 }
 
 h1, h2 {
@@ -95,18 +99,30 @@ h1, h2 {
 
 h3 { 
 	font-size: 21px;
+	line-height: 1.4em;
 }
 
 h1 a {
-	color: #000;
+	color: #4C4C4C;
 	text-decoration: none;
-	font-weight: normal;
-	
 }
 
 h1 a:hover, h1 a:focus, h1 a:active {
 	
 	color: #4793bb;
+}
+
+blockquote { 
+    border-left: 4px solid #ccc;
+    margin-left: 40px;
+    
+}
+
+pre {
+    border: 1px solid #e3e3e3;
+    -moz-border-radius: 0.38462em;
+    border-radius: 0.38462em;
+    background: #f7f7f7;
 }
 
 #archive h2 {
@@ -130,20 +146,31 @@ aside, article, #archive, form, #txpCommentInputForm, .comments li {
 	border-bottom-width: 2px;
 }
 
+#archive {
+	margin-top: 30px;
+}
+
 aside { 
 	padding: 40px;
+	clear: both; 
+	overflow: auto;
 }
 
 aside img {
 	float: left;
 	margin-right: 40px;
+	border: 1px solid #CCC;
+	
+	/*
 	margin-top: -90px;
 	margin-bottom: 40px;
+	*/
 }
 
 aside p {
 	padding: 0;
 	margin: 0;
+	margin-top: 20px;
 }
 
 article { 
@@ -151,7 +178,9 @@ article {
 }
 
 article p, aside p {	
-	font-family: "Trebuchet MS";
+	/* font-family: "Trebuchet MS";
+	font-family: 'Open Sans', sans-serif;
+	 -webkit-text-size-adjust: none; */
 }
 
 article ul li { 
@@ -162,8 +191,8 @@ article ul li {
 
 nav ul li {
 	display: inline;
-	padding: 0 5px;
-	border-left: 1px solid rgba(0,0,0,0.3);
+	padding: 0 15px;
+/* 	border-left: 1px solid rgba(0,0,0,0.3); */
 }
 
 
@@ -188,12 +217,13 @@ nav ul {
 }
 
 nav ul li a {
-	color: #000;
+	color: #888;
 	font-weight: normal;
+	text-decoration: none;
 }
 
 nav ul li a:hover, nav ul li a:focus {
-	color: #333;
+	color: #000;
 }
 
 .post-image {
@@ -239,8 +269,14 @@ fieldset textarea:focus { background: #FFF; }
 .comments li:hover { opacity: 1;}
 
 @media screen and (max-width: 700px) {
-	aside img { float: none; margin:0 auto 10px auto; display: block;  }
+	
 	article img { max-width: 100%; height: auto; }
-	body      { margin: 40px auto;}
+	body      { margin: 20px auto; font-size: 14px; line-height: 1.4em;}
 	pre 	  {  overflow: auto;}
+	h1, h2, h3, h4, p, ul, pre { padding: 0 20px; }
+	aside { padding: 20px; }
+}
+
+@media screen and (max-width: 480px) {
+	aside img { float: none; margin:0 auto 10px auto; display: block;  }
 }

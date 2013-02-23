@@ -6,6 +6,7 @@
 	<txp:feed_link format="link" flavor="rss" />
 	<meta name="viewport" content="width=device-width" />
 	<meta charset="UTF-8">
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 </head>
 
 <body id="home">
