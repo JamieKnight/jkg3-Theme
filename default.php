@@ -4,12 +4,14 @@
 	<title><txp:page_title /></title>
 	<link href="/screen.css" media="screen" rel="stylesheet" type="text/css" />
 	<txp:feed_link format="link" flavor="rss" />
-	<meta name="viewport" content="width=device-width" />
+	<meta name="viewport" content="width=device-width initial-scale=1.0, 
+    maximum-scale=1.0, minimum-scale=1.0" />
 	<meta charset="UTF-8">
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 </head>
 
 <body id="home">
+	
 	<nav>
 		<ul>
 			<li><a href="/">Home</a></li>
