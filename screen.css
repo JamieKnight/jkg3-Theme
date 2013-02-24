@@ -139,7 +139,6 @@ pre {
 /*-  STRUCTURE
 ----------------------------------------------------------------------*/
 
-
 aside, article, #archive, form, #txpCommentInputForm, .comments li {
 	background: #FFF;
 	border: 1px solid #E5E5E5;
@@ -151,6 +150,43 @@ aside, article, #archive, form, #txpCommentInputForm, .comments li {
 
 #archive {
 	margin-top: 30px;
+}
+
+
+#article-nav {
+    margin-top: 20px;
+    padding:8px 40px;
+    text-align: center;
+}
+
+#article-nav p {
+    display: inline;
+    padding: 0 20px;;
+}
+
+#article-nav a {
+    padding: 8px 20px;
+    background: #4793bb;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#article-nav a:hover, #article-nav a:focus, #article-nav  a:active {
+    background: #4C4C4C;
+}
+
+#article-nav a:before,  #article-nav a:after {
+    padding: 4px;
+    font-size: 130%;
+}
+
+#article-nav #older a:before {
+    content: "\00ab";
+}
+
+#article-nav #newer a:after {
+    content: "\00bb";
 }
 
 aside { 

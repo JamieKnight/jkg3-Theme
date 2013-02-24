@@ -37,7 +37,11 @@
 			<txp:if_individual_article>
 				<txp:article />
 			<txp:else />
-				<txp:article_custom section="journal" limit="3" />
+				<txp:article section="journal" limit="3" />
+				<div id="article-nav">
+				    <p id="older"><txp:older>Older Articles</txp:older></p>
+				    <p id="newer"><txp:newer>Newer Articles</txp:newer></p>
+				</div>
 			</txp:if_individual_article>		
 		</txp:if_category>
 	</txp:if_section>
