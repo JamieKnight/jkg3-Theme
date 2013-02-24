@@ -51,6 +51,7 @@ body {
 	margin: 75px auto;
 	padding: 0 20px;
 	-webkit-font-smoothing: antialiased;
+	
 }
 
 a {
@@ -119,9 +120,11 @@ blockquote {
 }
 
 pre {
-    border: 1px solid #e3e3e3;
-    -moz-border-radius: 0.38462em;
-    border-radius: 0.38462em;
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
     background: #f7f7f7;
 }
 
@@ -160,11 +163,6 @@ aside img {
 	float: left;
 	margin-right: 40px;
 	border: 1px solid #CCC;
-	
-	/*
-	margin-top: -90px;
-	margin-bottom: 40px;
-	*/
 }
 
 aside p {
