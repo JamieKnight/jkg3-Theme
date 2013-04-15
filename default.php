@@ -21,12 +21,12 @@
 		</ul>
 	</nav>
 	
-	<aside>
+	<header>
 		<a href="/">
 			<img src="/assets/headshot.jpg" alt="Photo of Jamie &amp; Lion" />
 		</a>
 		<p>The personal site of <strong>Jamie Knight</strong>, a slightly autistic (<abbr title="British Boradcasting Corpoeration">BBC</abbr>)  <strong>web developer</strong>, <strong>speaker</strong> and <strong>mountain biker</strong> who is never seen far from his plush sidekick <em>Lion</em>.</p>
-	</aside>
+	</header>
 	
 	<txp:if_section name=", Journal"> 
 		<txp:if_category>
