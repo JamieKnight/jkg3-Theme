@@ -12,8 +12,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
 del, dfn, em, img, ins, kbd, q, samp,
 small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
+b, i, dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure, 
@@ -38,22 +37,16 @@ footer, header, hgroup, menu, nav, section {
 ----------------------------------------------------------------------*/
 
 html {
-/* 	background: #F2F2F2; */
-/* 	background: #E4E1DD; */
-    background: #E67E22;
-
+    background: #f0f0f0;
 }
 
 body {
-
 	color: #4C4C4C;
  	font: normal 16px/26px 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
- 	/*font: normal 16px/26px 'Helvetica Neue', Helvetica, Arial, sans-serif; */
-	max-width: 700px;
-	margin: 75px auto;
+	max-width: 698px;
+	margin: 25px auto;
 	padding: 0 20px;
 	-webkit-font-smoothing: antialiased;
-	
 }
 
 a {
@@ -70,54 +63,112 @@ a:hover, a:focus, a:active  {
 	float: left;
 	padding-right: 1em;
 }
+
 .right { 
 	float: right; 
 	padding-left: 1em; 
 }
 
-
-
-/*-  HEADINGS + HEADING LINKS
+/*-  HEADINGS
 ----------------------------------------------------------------------*/
 
-h1, h2, h3, h4, p, ul, pre { 
-	margin-bottom: 22px;
-	padding:0 40px;
-}
 
-h1, h2, h3, h4 { 
-	margin-top: 22px;
-}
-
-h1 { 
-	line-height: 1.4em; 
-	font-size: 24px;
+h1, h2, h3, h4 {
+    padding: 22px 40px;
+    line-height: 1.4em; 
 }
 
 h1, h2 {
 	border-bottom: 1px solid #E5E5E5;
-	padding-bottom: 22px;
 }
 
-h3 { 
-	font-size: 21px;
-	line-height: 1.4em;
+h1 {
+    font-size: 24px;
 }
 
+h3 {
+    font-size: 21px;
+    padding: 0 40px; /* work around collapsing margins */
+}
+
+#archive h2 {
+	background: #F9F9F9;
+	border-top: 1px solid #EFEFEF;
+	padding-top: 22px;
+	margin-bottom: 22px;
+}
+/* fix rounded corners on archive page */
+#archive h2:nth-of-type(1){
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/*- HEADING LINKS
+----------------------------------------------------------------------*/
 h1 a {
 	color: #4C4C4C;
 	text-decoration: none;
 }
 
 h1 a:hover, h1 a:focus, h1 a:active {
-	
 	color: #4793bb;
+}
+
+
+/*-  BLOCK ELEMENTS
+----------------------------------------------------------------------*/
+header { 
+	padding: 40px 40px 0 40px;
+	clear: both; 
+	overflow: auto;
+	color: #4c4c4c;
+}
+
+
+header img {
+	float: left;
+	margin-right: 40px;
+	border: 4px solid #FFF;
+}
+
+header p {
+	padding: 0;
+	margin: 0;
+	margin-top: 20px;
+}
+
+article { 
+	margin-top: 40px;
+}
+
+article ul li { 
+	list-style-type: circle; 
+	list-style-position: inside;
+	margin-bottom: 22px;
+}
+
+
+#archive {
+	margin-top: 30px;
+}
+
+article, #archive, form, #txpCommentInputForm, .comments li {
+	background: #FFF;
+	border: none;
+	clear: both;
+	padding-bottom: 18px;
+	border-radius: 5px;
+	border-bottom-width: 2px;
+}
+
+p, ul, pre { 
+	padding:0 40px;
+	margin: 22px 0;
 }
 
 blockquote { 
     border-left: 4px solid #ccc;
     margin-left: 40px;
-    
 }
 
 pre {
@@ -128,32 +179,6 @@ pre {
     border-radius: 0;
     background: #f7f7f7;
 }
-
-#archive h2 {
-
-	background: #F9F9F9;
-	border-top: 1px solid #EFEFEF;
-	padding-top: 22px;
-	margin-top:0;
-}
-
-/*-  STRUCTURE
-----------------------------------------------------------------------*/
-
-aside, article, #archive, form, #txpCommentInputForm, .comments li {
-	background: #FFF;
-	border: 1px solid #E5E5E5;
-	border: 1px solid transparent;
-	clear: both;
-	padding-bottom: 18px;
-	border-radius: 5px;
-	border-bottom-width: 2px;
-}
-
-#archive {
-	margin-top: 30px;
-}
-
 
 #article-nav {
     margin-top: 20px;
@@ -184,6 +209,7 @@ aside, article, #archive, form, #txpCommentInputForm, .comments li {
     font-size: 130%;
 }
 
+
 #article-nav #older a:before {
     content: "\00ab";
 }
@@ -192,44 +218,9 @@ aside, article, #archive, form, #txpCommentInputForm, .comments li {
     content: "\00bb";
 }
 
-aside { 
-	padding: 40px;
-	clear: both; 
-	overflow: auto;
-}
-
-aside img {
-	float: left;
-	margin-right: 40px;
-	border: 1px solid #CCC;
-}
-
-aside p {
-	padding: 0;
-	margin: 0;
-	margin-top: 20px;
-}
-
-article { 
-	margin-top: 40px;
-}
-
-article p, aside p {	
-	/* font-family: "Trebuchet MS";
-	font-family: 'Open Sans', sans-serif;
-	 -webkit-text-size-adjust: none; */
-}
-
-article ul li { 
-	list-style-type: circle; 
-	list-style-position: inside;
-	margin-bottom: 22px;
-}
-
 nav ul li {
 	display: inline;
 	padding: 0 15px;
-/* 	border-left: 1px solid rgba(0,0,0,0.3); */
 }
 
 
@@ -271,6 +262,8 @@ nav ul li a:hover, nav ul li a:focus {
 	max-width: 100%;
 	border-top-right-radius: 5px;
 	border-top-left-radius: 5px;
+	margin: 0;
+	padding: 0;
 }
 
 .meta { 
@@ -305,6 +298,7 @@ fieldset textarea:focus { background: #FFF; }
 
 .comments li { width: 100%; margin-bottom: 40px; opacity: 0.95;}
 .comments li:hover { opacity: 1;}
+/*
 
 @media screen and (max-width: 700px) {
 	
@@ -313,9 +307,10 @@ fieldset textarea:focus { background: #FFF; }
 	pre 	       {  overflow: auto;}
 	h1, h2, h3, h4, p, ul, pre { padding: 0 20px; }
 	h1             { padding-bottom: 20px;}
-	aside { padding: 20px; }
+	header { padding: 20px; }
 }
 
 @media screen and (max-width: 480px) {
-	aside img { float: none; margin:0 auto 10px auto; display: block;  }
+	header img { float: none; margin:0 auto 10px auto; display: block;  }
 }
+*/
