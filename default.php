@@ -10,16 +10,6 @@
 </head>
 
 <body id="home">
-	
-	<nav>
-		<ul>
-			<li><a href="/">Home</a></li>
-			<li><a href="/archive">Archive</a></li>
-			<li><a href="http://pluslion.com">Work</a></li>
-			<txp:feed_link flavor="rss" wraptag="li">RSS </txp:feed_link>
-		</ul>
-	</nav>
-	
 	<header>
 		<a href="/">
 			<img src="/assets/headshot.jpg" alt="Photo of Jamie &amp; Lion" />
