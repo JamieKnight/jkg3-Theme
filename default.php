@@ -14,7 +14,10 @@
 		<a href="/">
 			<img src="/assets/headshot.jpg" alt="Photo of Jamie &amp; Lion" />
 		</a>
-		<p>The personal site of <strong>Jamie Knight</strong>, a slightly autistic (<abbr title="British Boradcasting Corpoeration">BBC</abbr>)  <strong>web developer</strong>, <strong>speaker</strong> and <strong>mountain biker</strong> who is never seen far from his plush sidekick <em>Lion</em>.</p>
+		<p>The personal site of <strong>Jamie Knight</strong>, a slightly autistic <strong>web developer</strong>, <strong>speaker</strong> and <strong>mountain biker</strong> who is never seen far from his plush sidekick <a href="/Journal/on-autism-lion"><em>Lion</em></a>. View the <a href="/archive">Archive</a></p>
+    
+    <p>Topics: <a href="/category/autism-me/">Autism</a> <a href="/category/development/">Development</a></p>
+
 	</header>
 	
 	<txp:if_section name=", Journal"> 
