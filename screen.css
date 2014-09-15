@@ -11,7 +11,7 @@ html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
 del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
+small, strong, var,
 b, i, dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
@@ -134,7 +134,7 @@ header img {
 header p {
 	padding: 0;
 	margin: 0;
-	margin-top: 20px;
+	margin-top: 5px;
 }
 
 article { 
@@ -142,7 +142,13 @@ article {
 }
 
 article ul li { 
-	list-style-type: circle; 
+	list-style-type:  square; 
+	list-style-position: inside;
+	margin-bottom: 22px;
+}
+
+article ol li { 
+	list-style-type: decimal; 
 	list-style-position: inside;
 	margin-bottom: 22px;
 }
@@ -161,7 +167,7 @@ article, #archive, form, #txpCommentInputForm, .comments li {
 	border-bottom-width: 2px;
 }
 
-p, ul, pre { 
+p, ul, ol, pre { 
 	padding:0 40px;
 	margin: 22px 0;
 }
@@ -232,29 +238,6 @@ nav ul li {
 	padding-left: 40px; 
 }
 
-nav ul li:first-of-type {
-	border: none;
-}
-
-nav ul { 
-	display: block;
-	float: right;
-	overflow: auto;
-	margin-bottom: 25px;
-	padding: 0;
-}
-
-nav ul li a {
-	color: #888;
-	font-weight: normal;
-	text-decoration: none;
-	color: #fff;
-}
-
-nav ul li a:hover, nav ul li a:focus {
-	color: #000;
-}
-
 .post-image {
 	border-bottom: 1px solid #EEEEEE;
 	height: auto;
@@ -288,29 +271,53 @@ nav ul li a:hover, nav ul li a:focus {
 	padding-right: 30px;
 }
 
-fieldset { border: none;}
-fieldset h3 {  padding-bottom: 5px; font-size: 16px; }
-fieldset label { width: 180px; display: block; float: left; font-size: 14px; }
-fieldset input[type='text'] { border: #E5E5E5 solid 1px; background: #FEFEFE; padding: 6px; width:400px;}
-fieldset input:focus { background: #FFF; }
+fieldset { 
+    border: none;
+}
+
+fieldset h3 {
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+
+fieldset label {
+    width: 180px;
+    display: block;
+    float: left;
+    font-size: 14px;
+}
+
+fieldset input[type='text'] { 
+    border: #E5E5E5 solid 1px;
+    background: #FEFEFE;
+    padding: 6px;
+    width:400px;
+}
+
+fieldset input:focus { 
+    background: #FFF;
+}
 fieldset textarea { display: block;border: #E5E5E5 solid 1px; background: #FEFEFE; padding: 6px;  width:400px; height: 140px;}
 fieldset textarea:focus { background: #FFF; }
 
 .comments li { width: 100%; margin-bottom: 40px; opacity: 0.95;}
 .comments li:hover { opacity: 1;}
-/*
 
 @media screen and (max-width: 700px) {
 	
 	article img    { max-width: 100%; height: auto; }
 	body           { margin: 20px auto; font-size: 14px; line-height: 1.4em;}
 	pre 	       {  overflow: auto;}
-	h1, h2, h3, h4, p, ul, pre { padding: 0 20px; }
-	h1             { padding-bottom: 20px;}
-	header { padding: 20px; }
+	header { padding: 20px; font-size: 9px; }
+	header p { margin-top: 0; }
+	
 }
 
 @media screen and (max-width: 480px) {
 	header img { float: none; margin:0 auto 10px auto; display: block;  }
+	header { font-size: 14px; }
+	header p { margin-top: 20px; }
+	fieldset input[type='text'], fieldset textarea { width: 80%; display: block; clear: both; }
+
 }
-*/
+
