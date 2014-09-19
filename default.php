@@ -4,28 +4,20 @@
 	<title><txp:page_title /></title>
 	<link href="/screen.css" media="screen" rel="stylesheet" type="text/css" />
 	<txp:feed_link format="link" flavor="rss" />
-	<meta name="viewport" content="width=device-width initial-scale=1.0, 
-    maximum-scale=1.0, minimum-scale=1.0" />
-	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width initial-scale=1.0, minimum-scale=1.0" />
+	<meta charset="iso-8859-1"/>
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 </head>
 
 <body id="home">
-	
-	<nav>
-		<ul>
-			<li><a href="/">Home</a></li>
-			<li><a href="/archive">Archive</a></li>
-			<li><a href="http://pluslion.com">Work</a></li>
-			<txp:feed_link flavor="rss" wraptag="li">RSS </txp:feed_link>
-		</ul>
-	</nav>
-	
 	<header>
 		<a href="/">
 			<img src="/assets/headshot.jpg" alt="Photo of Jamie &amp; Lion" />
 		</a>
-		<p>The personal site of <strong>Jamie Knight</strong>, a slightly autistic (<abbr title="British Boradcasting Corpoeration">BBC</abbr>)  <strong>web developer</strong>, <strong>speaker</strong> and <strong>mountain biker</strong> who is never seen far from his plush sidekick <em>Lion</em>.</p>
+		<p>The personal site of <strong>Jamie Knight</strong>, a slightly autistic <strong>web developer</strong>, <strong>speaker</strong> and <strong>mountain biker</strong> who is never seen far from his plush sidekick <a href="/Journal/on-autism-lion"><em>Lion</em></a>. View the <a href="/archive">Archive</a></p>
+    
+    <p>Topics: <a href="/category/autism-me/">Autism</a> <a href="/category/development/">Development</a></p>
+
 	</header>
 	
 	<txp:if_section name=", Journal"> 
